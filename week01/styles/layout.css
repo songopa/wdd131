@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins&display=swap');
+
+:root {
+    --primary-color: #071013;
+    --secondary-color: #344055;
+    --accent1-color: #b0c6f0;
+    --accent2-color: #BAFF29;
+
+    --heading-font: "Poppins", cursive;
+    --paragraph-font:"Open Sans", sans-serif;
+
+    --nav-background-color: #344055;
+    --nav-link-color: #fff;
+    --nav-hover-link-color: #071013;
+    --nav-hover-background-color: #BAFF29; 
+}
+
+body {
+    font-family: var(--paragraph-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    background-color: var(--accent1-color);
+    padding-top: 5px;
+    width: 100%;
+}
+
+p {
+    padding: 2px 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+footer {
+    background-color: var(--accent1-color);
+    text-align: center;
+    padding: 6px 0;
+    flex: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.main-content {
+    background-color: rgb(202, 201, 201);
+    padding: 5px 20px;
+    flex:2;
+}
+.aside-content {
+    background-color: aliceblue;
+    padding: 5px 20px;
+    flex: 1 1 auto;
+}
