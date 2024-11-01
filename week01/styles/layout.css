@@ -54,8 +54,8 @@ nav a:hover {
 }
 
 main {
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 footer {
@@ -72,10 +72,8 @@ footer {
 .main-content {
     background-color: rgb(202, 201, 201);
     padding: 5px 20px;
-    flex:2;
 }
 .aside-content {
     background-color: aliceblue;
     padding: 5px 20px;
-    flex: 1 1 auto;
 }
