@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins&display=swap');
 
 :root {
@@ -107,8 +108,6 @@ p {
 .card-body {
     padding: 4px;
     flex-wrap: wrap;
-    display: absolute;
-    /* flex: 1 1 auto; */
 }
 
 .row {
