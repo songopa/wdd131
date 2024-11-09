@@ -4,6 +4,7 @@
 :root {
     --primary-color: #071013;
     --secondary-color: #344055;
+    --emphasis-color: #0c3a0a;
     --accent1-color: #b0c6f0;
     --accent2-color: #BAFF29;
 
@@ -48,8 +49,9 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    text-decoration : var(--nav-hover-background-color) underline;
 }
 
 main {
@@ -161,4 +163,8 @@ p {
 
 .width-75 {
     width: 75%;
+}
+
+.text-emphasis {
+    color: var(--emphasis-color);
 }
