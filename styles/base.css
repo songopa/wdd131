@@ -65,8 +65,10 @@ footer {
     text-align: center;
     width: 100%;
     padding: 1px 0;
-    /* position: fixed;
-    bottom: 0; */
+}
+
+li {
+    line-height: 3rem;
 }
 
 
@@ -154,7 +156,7 @@ p {
 }
 
 .margin-vh {
-    margin: 7rem 0;
+    margin: 2rem 0;
 }
 
 .width-75 {
