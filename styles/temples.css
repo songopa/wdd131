@@ -1,12 +1,18 @@
+* {
+    --primary-color: #fff;
+    --secondary-color: #00ffff;
+
+    --primary-background:#344055;
+}
 body {
     max-width: 960px;
     margin: 0 auto;
     font-family: "Roboto", serif;
 }
 footer, header {
-    background-color: #344055;
+    background-color: var(--primary-background);
     padding: 0.5rem;
-    color: #fff;
+    color: var(--primary-color);
 }
 header {
     display: grid;
@@ -30,14 +36,14 @@ nav {
     grid-column: 2 / span 2;
 }
 nav a {
-    color: #fff;
+    color: var(--primary-color);
     text-decoration: none;
     display: block;
     padding: 0 0.5rem;
 }
 nav a:hover {
     font-weight: 900;
-    text-decoration : #fff underline;
+    text-decoration : var(--secondary-color) underline;
 }
 main img {
     width: 270px;
@@ -58,7 +64,7 @@ figure, p {
     text-align: center;
 }
 .active {
-    color: aqua;
+    color: var(--secondary-color);
 }
 nav.show {
     display: grid;
