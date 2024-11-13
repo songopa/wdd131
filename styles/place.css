@@ -29,18 +29,11 @@ picture img {
     border-bottom: 1rem solid var(--flag-color2);
     margin-bottom: -8px !important;
 }
-table {
-    align-self: center;
-}
-
 .text-end {
     text-align: end;
 }
-.card-title {
-    font-size: 1.2rem;
-    font-weight: 600;
+.card-header h2 {
     text-align: center;
-    margin: 1rem;
 }
 .card-body {
     justify-items: center;
@@ -94,11 +87,9 @@ table {
         left: -1rem;
         width: 85%;
     }
-    .card-title {
-        font-size: 1.1rem;
-        font-weight: 600;
-        text-align: start;
-        margin: 0 0.5rem;
+    .card-header h2 {
+        margin: 0;
+        display: inline;;
     }
     .weather-icon::after {
         background-image: url('../images/sun-icon.webp');
