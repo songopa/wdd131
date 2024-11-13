@@ -40,15 +40,16 @@ picture img {
     margin-bottom: 0.5rem;
     font-size: 1rem;
 }
+.weather-icon {
+    display: grid;
+    justify-items: center;
+}
 .weather-icon::after {
-    content: "";
-    background-image: url('../images/sun-icon.svg');
-    background-size: var(--icon-size) var(--icon-size);
-    display: flex;
-    width: var(--icon-size);
-    height: var(--icon-size);
+    content: url('../images/sun-icon.svg');
+    width: var(--icon-size) !important;
+    height: var(--icon-size) !important;
     --icon-size: 64px;
-    justify-self: center;
+    
 }
 
 /* For large screen above 600px */
@@ -91,14 +92,14 @@ picture img {
         margin: 0;
         display: inline;;
     }
-    .weather-icon::after {
-        background-image: url('../images/sun-icon.webp');
-        display: inline-block;
-        --icon-size: 30px;
-        margin-left: 1rem;
-        margin-bottom: -10px;
+    .weather-icon {
+        display: inline;
     }
-
+    .weather-icon::after {
+        content: "🔆";
+        font-size: 22px;
+        margin-left: 1rem;
+    }
     .card-body {
         padding-top: 50px;
         flex-wrap: wrap;
