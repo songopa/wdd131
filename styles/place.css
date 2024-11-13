@@ -1,0 +1,107 @@
+* {
+    --flag-color1: #1EB53A;
+    --flag-color2: #FCD116;
+    --flag-color3: #000;
+    --flag-color4: #00A3DD;
+    --heading-font: "Open Sans", sans-serif;
+    --body-font: "Poppins", sans-serif;
+
+    margin: 0;
+}
+body {
+    font-family: var(--body-font);
+    max-width: 800px;
+    margin: 0 auto;
+}
+header, footer {
+    background-color: var(--flag-color1);
+    text-align: center;
+    padding: 0.5rem;
+}
+h1 {
+    font-size: 3rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font) !important;
+}
+picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    border-bottom: 1rem solid var(--flag-color2);
+    margin-bottom: -8px !important;
+}
+table {
+    align-self: center;
+}
+
+.text-end {
+    text-align: end;
+}
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 1rem;
+}
+.card-body {
+    justify-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+
+/* For large screen above 600px */
+
+@media screen and (min-width:600px){
+    
+    .ps-relative {
+        position: relative;
+    }
+    .data-card {
+        position: absolute !important;
+        top: 2rem;
+        left: 3rem;
+    }
+    .weather-card {
+        position: absolute !important;
+        bottom: 2rem;
+        right: 3rem;
+        font-size: 14px;
+    }
+
+    .card {
+        --card-border-radius: 10px;
+        background-color: rgba(245, 245, 245, 0.8);
+        padding: 5px 20px;
+        border: var(--card-border) ;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-header {
+        background-color: var(--flag-color4);
+        padding: 0.5rem;
+        margin-bottom: 0;
+        border-bottom: var(--card-border);
+        position: absolute;
+        left: -1rem;
+        width: 85%;
+        /* color: #fff; */
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-align: start;
+        margin: 0 0.5rem;
+    }
+
+    .card-body {
+        padding-top: 50px;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+}

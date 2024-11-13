@@ -1,5 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins&display=swap');
 
 :root {
     --primary-color: #071013;
@@ -8,7 +7,7 @@
     --accent1-color: #b0c6f0;
     --accent2-color: #BAFF29;
 
-    --heading-font: "Poppins", cursive;
+    --heading-font: "Poppins", sans-serif;
     --paragraph-font:"Open Sans", sans-serif;
 
     --nav-background-color: #344055;

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Zanzibar</title>
+    <meta name="description" content="A webpage for showcasing details and weather of a place I have visited as per W03 assignment">
+    <meta name="author" content="Songopa Julius">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins&display=swap" rel="stylesheet">    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Zanzibar</h1>
+    </header>
+    <main>
+        <div class="ps-relative">
+            <picture>
+                <source media="(min-width:600px )" srcset="images/znz-large.webp">
+                <img src="images/znz-small.webp" height="750" width="500" alt="zanzibar">
+            </picture>
+            <div class="card data-card">
+                <div class="card-header card-title">Data</div>
+                <div class="card-body">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="text-end">Area:</td>
+                                <td>2460 sq km</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Population:</td>
+                                <td>1,889,773</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Capital:</td>
+                                <td>Zanibar city</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Languages:</td>
+                                <td>Swahili</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Currency:</td>
+                                <td>Tanzanian Shilling</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Time Zone:</td>
+                                <td>UTC+3</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Calling Code:</td>
+                                <td>+255</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Internet TLD:</td>
+                                <td>.co.tz</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card weather-card">
+                <div class="card-header card-title">Weather</div>
+                <div class="card-body">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="text-end">Temperature:</td>
+                                <td>28 <sup>o</sup>C</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Conditions:</td>
+                                <td>Sunny</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Wind:</td>
+                                <td>19 Km/h</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Wind Chill:</td>
+                                <td id="windChill"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Songopa Julius | Tanzania </p>
+        <p class="text-emphasis" id="lastModified"></p>
+    </footer>
+</body>
+</html>

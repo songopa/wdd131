@@ -7,7 +7,7 @@
 body {
     max-width: 960px;
     margin: 0 auto;
-    font-family: "Roboto", serif;
+    font-family: "Roboto", sans-serif;
 }
 footer, header {
     background-color: var(--primary-background);
@@ -30,16 +30,19 @@ h1, h2, h3 {
 }
 nav {
     display: none;
-    place-items: center;
     grid-gap: 10px;
     font-size: 1.2rem;
-    grid-column: 2 / span 2;
+    grid-column: 1 / span 2;
+    text-align: center;
+    width: 90%;
 }
 nav a {
     color: var(--primary-color);
     text-decoration: none;
     display: block;
-    padding: 0 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #bbb;
+
 }
 nav a:hover {
     font-weight: 900;
