@@ -14,12 +14,9 @@ body {
     margin: 0 auto;
 }
 header, footer {
-    background-color: var(--flag-color1);
+    background-color: var(--flag-color4);
     text-align: center;
     padding: 0.5rem;
-}
-h1 {
-    font-size: 3rem;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font) !important;
@@ -50,7 +47,16 @@ table {
     margin-bottom: 0.5rem;
     font-size: 1rem;
 }
-
+.weather-icon::after {
+    content: "";
+    background-image: url('../images/sun-icon.svg');
+    background-size: var(--icon-size) var(--icon-size);
+    display: flex;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    --icon-size: 64px;
+    justify-self: center;
+}
 
 /* For large screen above 600px */
 
@@ -70,7 +76,6 @@ table {
         right: 3rem;
         font-size: 14px;
     }
-
     .card {
         --card-border-radius: 10px;
         background-color: rgba(245, 245, 245, 0.8);
@@ -80,23 +85,27 @@ table {
         display: flex;
         flex-direction: column;
     }
-
     .card-header {
-        background-color: var(--flag-color4);
+        background-color: var(--flag-color1);
         padding: 0.5rem;
         margin-bottom: 0;
         border-bottom: var(--card-border);
         position: absolute;
         left: -1rem;
         width: 85%;
-        /* color: #fff; */
     }
-
     .card-title {
         font-size: 1.1rem;
         font-weight: 600;
         text-align: start;
         margin: 0 0.5rem;
+    }
+    .weather-icon::after {
+        background-image: url('../images/sun-icon.webp');
+        display: inline-block;
+        --icon-size: 30px;
+        margin-left: 1rem;
+        margin-bottom: -10px;
     }
 
     .card-body {
