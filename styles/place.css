@@ -32,24 +32,13 @@ picture img {
 .text-end {
     text-align: end;
 }
-.card-header h2 {
+.card-header {
     text-align: center;
 }
 .card-body {
     justify-items: center;
     margin-bottom: 0.5rem;
     font-size: 1rem;
-}
-.weather-icon {
-    display: grid;
-    justify-items: center;
-}
-.weather-icon::after {
-    content: url('../images/sun-icon.svg');
-    width: var(--icon-size) !important;
-    height: var(--icon-size) !important;
-    --icon-size: 64px;
-    
 }
 
 /* For large screen above 600px */
@@ -87,10 +76,14 @@ picture img {
         position: absolute;
         left: -1rem;
         width: 85%;
+        text-align: start;
     }
     .card-header h2 {
         margin: 0;
         display: inline;;
+    }
+    .card-header img {
+        display: none;
     }
     .weather-icon {
         display: inline;
