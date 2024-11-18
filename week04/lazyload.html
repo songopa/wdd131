@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 - Lazy load</title>
+    <meta name="description" content="A webpage for demonstrating image lazy loading as per W04 assignment">
+    <meta name="author" content="Songopa Julius">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Image Lazy Loading</h1>
+    </header>
+    <main>
+        <img src="//via.placeholder.com/400x600.webp/2ecc71/fff?text=Jesus" width="400" height="600" alt="Jesus" loading="lazy">
+        <img src="//via.placeholder.com/400x600.webp/d35400/fff?text=Christ" width="400" height="600" alt="Christ" loading="lazy">
+        <img src="//via.placeholder.com/400x600.webp/3498db/fff?text=Our" width="400" height="600" alt="Our" loading="lazy">
+        <img src="//via.placeholder.com/400x600.webp/d35400/fff?text=King" width="400" height="600" alt="King" loading="lazy">
+        <img src="//via.placeholder.com/400x600.webp/3498db/fff?text=And" width="400" height="600" alt="And" loading="lazy">
+        <img src="//via.placeholder.com/400x600.webp/2ecc71/fff?text=Saviour" width="400" height="600" alt="Saviour" loading="lazy">
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Songopa Julius | Tanzania </p>
+        <p class="text-emphasis" id="lastModified"></p>
+    </footer>
+</body>
+</html>
