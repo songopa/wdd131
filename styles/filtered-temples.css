@@ -53,7 +53,7 @@ img {
     height: 250px;
     border-radius: 4px;
     background-color: var(--primary-background);
-    box-shadow: #00ffff;
+    
 }
 figure, p {
     margin: 2px;
@@ -94,6 +94,7 @@ header a {
     border: var(--card-border) ;
     border-radius: var(--card-border-radius);
     position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card-body {
     padding: 10px;
