@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #00ffff;
+    --primary-background:#344055;
+
+    --heading-font: "Open Sans", sans-serif;
+    --body-font: "Poppins", sans-serif;
+
+    margin: 0;
+}
+body {
+    font-family: var(--body-font);
+    max-width: 800px;
+    margin: 0 auto;
+}
+main {
+    margin: 1rem auto;
+    justify-items: center;
+}
+header, footer {
+    background-color: var(--primary-background);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 0.5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font) !important;
+}
+table {
+    margin: 1rem;
+    border-collapse: collapse;
+  }
+  
+  td, th {
+    border: 1px solid #000;
+    padding: 10px;
+  }
+
