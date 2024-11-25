@@ -1,47 +1,45 @@
 * {
-    --primary-color: #fff;
-    --secondary-color: #000;
-
-    --accent-color1: #bbb;
-    --accent-color2: #107896;
-
-    --primary-background:#344055;
-    --secondary-background:#0cc0df;
+    
+    --primary-font-color: #000;
+    --secondary-font-color: #fff;
+    --mute-font-color: #bbb;
+    --primary-background: #fff;
+    --secondary-background: #344055;
+    --brand-color: #107896;
+    --link-hover-color: #0cc0df;
 }
 body {
     max-width: 960px;
     margin: 0 auto;
-    font-family: "Roboto", sans-serif;
 }
 main {
     padding: 0.5rem;
+    font-family: "Noto Sans", sans-serif;
 }
 footer, header {
     padding: 0.5rem;
-    color: var(--primary-color);
+    font-family: "Roboto", sans-serif;
 }
 header {
     display: grid;
     grid-template-columns: 3fr 1fr;
     justify-items: center;
     align-items: center;
-    border-bottom: 2px solid var(--primary-background);
+    border-bottom: 2px solid var(--brand-color);
 }
 footer {
-    background-color: var(--primary-background);
+    background-color: var(--brand-color);
+    color: var(--secondary-font-color);
     padding: 1rem;
     text-align: center;
     font-size: 1.1rem;
-}
-header h1 {
-    color: var(--primary-background);
 }
 h1, h2, h3, h4 {
     margin:  1rem;
     font-family: "League Spartan", sans-serif;
 }
 h1, h2 {
-    color: var(--accent-color2);
+    color: var(--brand-color);
 }
 nav {
     display: none;
@@ -61,7 +59,7 @@ nav a {
 }
 nav a:hover {
     font-weight: 900;
-    text-decoration : var(--secondary-color) underline;
+    text-decoration : var(--link-hover-color) underline;
 }
 img {
     object-fit: contain;
@@ -79,17 +77,17 @@ header a {
     text-decoration: none;
 }
 button {
-    background: var(--primary-background);
-    border: 0.1rem var(--primary-background) solid;
+    background: var(--secondary-background);
+    border: 0.1rem var(--secondary-background) solid;
     border-radius: 0.375rem;
     padding: 0.375rem;
     margin: 0.375rem;
-    color: var(--primary-color);
+    color: var(--secondary-font-color);
 }
 button:hover {
-    background: var(--secondary-background);
-    border: 0.1rem var(--secondary-background) solid;
-    color: var(--secondary-color);
+    background: var(--link-hover-color);
+    border: 0.1rem var(--link-hover-color) solid;
+    color: var(--primary-font-color);
 }
 
 
@@ -137,4 +135,10 @@ nav.show {
 }
 .d-inline {
     display: inline-block !important;
+}
+.heading-font {
+    font-family: 'League Spartan', sans-serif;
+    color: var(--brand-color);
+    font-size: 2rem;
+    font-weight: bold;
 }
