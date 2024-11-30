@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project Site Plan| Songopa Julius</title>
+        <meta name="description" content="A site plan for Potea project.">
+        <meta name="author" content="Songopa Julius">
+        <link rel="stylesheet" href="styles/form.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Noto+Sans&family=Roboto&display=swap" rel="stylesheet">
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <div class="card">
+            <div class="card-header">
+                Product Review
+            </div>
+            <div class="card-body">
+                <form method="get" action="review.html" id="review-form">
+                    <label>
+                        Product Name
+                        <select name="product-name" id="product-name" required>
+                            <option value="" selected disabled>Choose a Product</option>
+                        </select>
+                    </label>
+                    <label>Overall rating</label>
+                    <div class="d-flex justify-content-around text-center">
+                        <label>
+                            &star; <br>
+                            <input type="radio" name="rating" id="rating1" value="1" required>
+                        </label>
+                        <label>
+                            &star;&star; <br>
+                            <input type="radio" name="rating" id="rating2" value="2" required>
+                        </label>
+                        <label>
+                            &star;&star;&star; <br>
+                            <input type="radio" name="rating" id="rating3" value="3" required>
+                        </label>
+                        <label>
+                            &star;&star;&star;&star; <br>
+                            <input type="radio" name="rating" id="rating4" value="4" required>
+                        </label>
+                        <label>
+                            &star;&star;&star;&star;&star; <br>
+                            <input type="radio" name="rating" id="rating5" value="5" required>
+                        </label>
+                    </div>
+                    <label>
+                        Date of installation
+                        <input type="date" name="review-date" id="review-date" required>
+                    </label>
+                    <label>Which features did you find useful in the product? </label> 
+                    <small>(Check all that apply)</small>
+                    <label>
+                        <input type="checkbox" name="durability" id="durability" value="yes">
+                        Durability
+                    </label>
+                    <label>
+                        <input type="checkbox" name="ease-of-use" id="ease-of-use" value="yes">
+                        Ease of use
+                    </label>
+                    <label>
+                        <input type="checkbox" name="performance" id="performance" value="yes">
+                        Performance
+                    </label>
+                    <label>
+                        <input type="checkbox" name="design" id="design" value="yes">
+                        Design
+                    </label>
+                    <label>
+                        Written Review (optional)
+                        <textarea name="written-review" id="written-review" rows="10"></textarea>
+                    </label>
+                    <label>
+                        Your Name (optional)
+                        <input type="text" name="client-name" id="client-name">
+                    </label>
+                    <button type="submit" id="review-submit-btn">
+                        Post Review
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Songopa Julius | Tanzania </p>
+        <p class="text-emphasis" id="lastModified"></p>
+    </footer>
+</body>
+</html>
