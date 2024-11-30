@@ -152,7 +152,7 @@ textarea {
 
 form button[type='submit'] {
     width: 96%;
-    margin: 1rem 2%;
+    margin: 2rem 2% 0 2%;
 }
 label sup {
     color: rgb(158, 1, 1);
