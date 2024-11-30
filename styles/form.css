@@ -154,6 +154,9 @@ form button[type='submit'] {
     width: 96%;
     margin: 1rem 2%;
 }
+label sup {
+    color: rgb(158, 1, 1);
+}
 
 
 
