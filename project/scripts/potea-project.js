@@ -234,3 +234,30 @@ function getReportCount () {
 function saveReportCount() {
     localStorage.setItem('reportCount', reportCount)
 }
+
+const contactCard = document.getElementById('contactCard');
+
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener(('submit'), (event) =>{
+        event.preventDefault();
+        contactCard.classList.add('d-none');
+        contactCard.classList.remove('d-block');
+        
+        receivedCard.classList.remove('d-none');
+        receivedCard.classList.add('d-block');
+        contactForm.reset();
+    });
+}
+
+const anotherInquiry = document.getElementById('anotherInquiry');
+if (anotherInquiry) {
+    anotherInquiry.addEventListener(('click'), () =>{
+        receivedCard.classList.add('d-none');
+        receivedCard.classList.remove('d-block');
+
+        contactCard.classList.remove('d-none');
+        contactCard.classList.add('d-block');
+
+    });
+}
