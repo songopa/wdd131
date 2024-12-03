@@ -74,7 +74,7 @@ nav a {
     text-decoration: none;
     display: block;
     padding: 0.5rem;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 2px solid var(--card-background);
 
 }
 nav .active {
@@ -255,6 +255,7 @@ label sup, legend sup {
 .d-grid {
     display:grid; 
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); 
+    justify-items: center;
     grid-gap: 10px;
 }
 .d-flex {
