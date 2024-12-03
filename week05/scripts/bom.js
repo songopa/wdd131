@@ -2,7 +2,7 @@ let chaptersArray = getChaptersList() || [];
 const inputElm= document.querySelector('#favchap');
 
 
-document.querySelector('#addChapter').addEventListener('click', function() {
+document.querySelector('#addChapter').addEventListener('click', () => {
     
     if (inputElm.value.trim() === "") {
         inputElm.focus();

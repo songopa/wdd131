@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Potea project | Contact Us</title>
+        <meta name="description" content="Welcome to Potea (lost & found), we help individuals recover their lost properties that are safely handled in by good samaritans">        <meta name="author" content="Songopa Julius">
+        <link rel="stylesheet" href="styles/potea-project.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Noto+Sans&family=Roboto&display=swap" rel="stylesheet">
+        <script src="scripts/potea-project.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img src="images/potea-logo-133.webp" alt="potea" width="133" height="40">
+            <a id="menu" href="#" aria-label="menu button"></a>
+            <nav id="navigation">
+                <a href="index.html" id="homeNav">Home</a>
+                <a href="search.html" id="searchNav">Search</a>
+                <a href="contact.html" class="active" id="contactNav">Contact Us</a>
+                <a href="signin.html" id="signinNav">Sign In</a>
+            </nav>
+        </header>
+        <main>
+            <div class="d-grid">
+                <div class="align-center">
+                    <h1>Talk to Us</h1>
+                    <p>
+                        We value your inputs and we promise to reach back within shortest time possible.
+                        Let us know how we can help and make our services valuable to you.
+                    </p>
+                </div>
+                <section class="card">
+                    <div class="card-header">
+                        Send us a message
+                    </div>
+                    <div class="card-body">
+                        <form id="contactForm">
+                            <label>
+                                Name
+                                <input type="text" name="name" id="name" placeholder="Your name">
+                            </label>
+                            <label >
+                                Email <sup>*</sup>
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </label>
+                            <fieldset>
+                                <legend class="chunk-label"> Type of enquiry <sup>*</sup></legend>
+                                <label>
+                                    <input type="radio" name="purpose" id="purpose1"> General Inquiry
+                                </label>
+                                <label>
+                                    <input type="radio" name="purpose" id="purposer2"> Lost Item Inquiry
+                                </label>
+                                <label>
+                                    <input type="radio" name="purpose" id="purpose3"> Website Suggestion
+                                </label>
+                            </fieldset>
+                            <label>
+                                Message <sup>*</sup>
+                                <textarea name="message" id="message" rows="10" required></textarea>
+                            </label>
+                            
+                            <label for="subscribe">
+                                <input type="checkbox" name="subscribe" id="subscribe"> 
+                                Agree to newsletter subscription
+                            </label>
+                            <button type="submit" class="center" >Send Message</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentYear"></span> || Songopa Julius || Tanzania </p>
+            <p class="text-emphasis" id="lastModified"></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Potea project | Report found item</title>
+        <meta name="description" content="Welcome to Potea (lost & found), we help individuals recover their lost properties that are safely handled in by good samaritans">        <meta name="author" content="Songopa Julius">
+        <link rel="stylesheet" href="styles/potea-project.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Noto+Sans&family=Roboto&display=swap" rel="stylesheet">
+        <script src="scripts/potea-project.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img src="images/potea-logo-133.webp" alt="potea" width="133" height="40">
+            <a id="menu" href="#" aria-label="menu button"></a>
+            <nav id="navigation">
+                <a href="index.html" id="homeNav">Home</a>
+                <a href="search.html" id="searchNav">Search</a>
+                <a href="contact.html" id="contactNav">Contact Us</a>
+                <a href="signin.html" id="signinNav">Sign In</a>
+            </nav>
+        </header>
+        <main>
+            <div class="d-flex justify-center align-center mt-xl mb-xl">
+                <section class="card" id="reportCard">
+                    <div class="card-header">
+                        Report a found Item
+                    </div>
+                    <div class="card-body">
+                        <form id="reportForm">
+                            <label >
+                                Your name
+                                <input type="text" name="name" id="name" placeholder="Your name">
+                            </label>
+                            <label >
+                                Your contact <sup>*</sup>
+                                <input type="tel" name="phone" id="phone" placeholder="Your phone" required>
+                            </label>
+                            <label>
+                                Item name <sup>*</sup>
+                                <input type="text" name="item-name" id="item-name" placeholder="Item name" required>
+                            </label>
+                            <label>
+                                Item Location <sup>*</sup>
+                                <input type="text" name="item-location" id="item-location" placeholder="Item location" required>
+                            </label>
+                            <label>
+                                Item details (optional)
+                                <textarea name="written-review" id="written-review" rows="10"></textarea>
+                            </label>
+                            <button type="submit" class="center" >Send Report</button>
+                        </form>
+                    </div>
+                </section>
+                <section class="card d-none" id="confirmationCard">
+                    <div class="card-header">Report received </div>
+                    <div class="card-body text-center">
+                        <p>
+                            Thanks helping someone get their item. 🙏 <br><br>
+                            <div id="report-count"></div> <br>
+                            <small>You are kind hearted and a good samaritan.</small>  
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <button id="anotherReport">Make Another Report</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentYear"></span> || Songopa Julius || Tanzania </p>
+            <p class="text-emphasis" id="lastModified"></p>
+        </footer>
+    </body>
+</html>
