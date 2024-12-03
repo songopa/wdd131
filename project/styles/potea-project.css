@@ -255,7 +255,6 @@ label sup, legend sup {
 .d-grid {
     display:grid; 
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); 
-    justify-items: center;
     grid-gap: 10px;
 }
 .d-flex {
@@ -270,6 +269,7 @@ label sup, legend sup {
 }
 .justify-center {
     justify-content: center;
+    justify-items: center;
 }
 .justify-end {
     justify-content: end;
